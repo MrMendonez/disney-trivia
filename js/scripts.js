@@ -35,16 +35,16 @@ $(document).ready(function() {
       // do something else
       console.log('Incorrect!');
     }
-  }
+  };
 
   // Answer1 Button Actions
   $('#answer1-btn').on('click', function(e) {
     console.log('answer1-btn click function fired');
     e.preventDefault();
-    correctAnswer = 'Jafar'
-    playerAnswer = $('#answer1').val().trim();
+    correctAnswer = 'jafar'
+    playerAnswer = $('#answer1').val().trim().toLowerCase();
     answerCheck();
-  })
+  });
 
 
 }); // end 
